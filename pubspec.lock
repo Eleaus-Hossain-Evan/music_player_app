@@ -13,10 +13,10 @@ packages:
     dependency: "direct main"
     description:
       name: atomsbox
-      sha256: d0e73a22c8c1cc5aa4d1dbfe950c86d9139f4c1589c86df8fc239052c8d16ca5
+      sha256: bbd74ba0ec56c9294f1dc027f8caf9195d908955d22f8981cfdfdb0cce1cd15f
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.0"
+    version: "0.4.0"
   audio_handler:
     dependency: "direct main"
     description:
@@ -189,6 +189,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
+  flutter_rating_bar:
+    dependency: transitive
+    description:
+      name: flutter_rating_bar
+      sha256: d2af03469eac832c591a1eba47c91ecc871fe5708e69967073c043b2d775ed93
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.0.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -203,10 +211,10 @@ packages:
     dependency: "direct main"
     description:
       name: go_router
-      sha256: bd7e671d26fd39c78cba82070fa34ef1f830b0e7ed1aeebccabc6561302a7ee5
+      sha256: da08429b5c1026cc78bd60c60bfff34f0b273b29feddeab00d3f5b56fb6f35ed
       url: "https://pub.dev"
     source: hosted
-    version: "6.5.9"
+    version: "8.0.5"
   google_fonts:
     dependency: transitive
     description:
