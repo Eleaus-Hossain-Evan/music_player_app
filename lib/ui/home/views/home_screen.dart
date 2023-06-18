@@ -1,7 +1,10 @@
 import 'package:atomsbox/atomsbox.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../models/song.dart';
+import '../../../repositories/song_repository.dart';
+import '../../widgets/music_player/music_player.dart';
 
 part 'widgets/_trending_songs_section.dart';
 
@@ -24,10 +27,8 @@ class HomeView extends StatelessWidget {
         centerTitle: false,
         title: AppText.headlineSmall('Good evening!'),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(Icons.add),
-      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: const MusicPlayer(dense: true),
       body: const SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(AppConstants.lg),
@@ -35,6 +36,7 @@ class HomeView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _TrendingSongsSection(),
+              // MusicPlayer(),
             ],
           ),
         ),

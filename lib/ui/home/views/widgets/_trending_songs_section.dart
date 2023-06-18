@@ -24,7 +24,10 @@ class _TrendingSongsSection extends StatelessWidget {
               song.title,
               fontWeight: FontWeight.bold,
             ),
-            onTap: () {},
+            onTap: () {
+              context.read<SongRepository>().setCurrentSong(song);
+              context.read<SongRepository>().play();
+            },
           );
         },
       ).toList(),
